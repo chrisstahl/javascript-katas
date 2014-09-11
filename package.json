@@ -1,0 +1,12 @@
+{
+  "name": "module-name",
+  "version": "0.0.1",
+  "description": "None For Now",
+  "author": "dmorgan",
+	"dependencies": {
+    	"grunt": "*",
+        "grunt-contrib-jasmine": "*",
+        "bower" : "*"
+  }
+
+}
