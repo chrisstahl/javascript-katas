@@ -6,6 +6,8 @@
 	"dependencies": {
     	"grunt": "*",
         "grunt-contrib-jasmine": "*",
+        "grunt-bower-requirejs":"*",
+        "grunt-template-jasmine-requirejs" : "*",
         "bower" : "*"
   }
 
