@@ -8,7 +8,7 @@ jamine-kata-template
 
 # Getting Started
 
-	- Install Grunt CLI [pm install -g grunt-cli]
+	- Install Grunt CLI [npm install -g grunt-cli]
 	- Install Node Dependencies [npm install]
 	- Install project Dependencies [bower install]
 
