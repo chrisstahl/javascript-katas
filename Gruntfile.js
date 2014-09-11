@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         jasmine : {
-            src : 'app/*.js',
+            src : 'app/**/*.js',
             options: {
-              	specs : 'specs/*spec.js',
+              	specs : 'specs/**/*spec.js',
 		        template: require('grunt-template-jasmine-requirejs'),
 		        templateOptions: {
-		         		requireConfigFile: 'app/config.js'
+		         	requireConfigFile: 'app/config.js'
 		        }
             }
         },
@@ -16,7 +16,6 @@ module.exports = function(grunt) {
 		    }
   		}
         });
-
 
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-bower-requirejs');
