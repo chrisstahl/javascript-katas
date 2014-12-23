@@ -1,9 +1,14 @@
 //Example Specs
 describe("Example Tests", function(){
 
-	it("Tests True vs False", function(){
+	beforeEach(function(){
+		spyOn(mySpy, 'myFunction');
+	});
+
+
+	it("Test Multiply", function(){
 		var result = multiplier.multiply_by(4);
-		expect(result).toEqual([4,8,12,16,20]);
+		expect(mySpy.myFunction).toHaveBeenCalled();
 	});
 	
 });

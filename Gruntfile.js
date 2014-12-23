@@ -7,8 +7,12 @@ module.exports = function(grunt) {
 		        template: require('grunt-template-jasmine-requirejs'),
 		        templateOptions: {
 		         	requireConfigFile: 'app/config.js'
-		        }
+		        },
+                junit : {
+                    path : 'junit'
+                }
             }
+           
         },
         bower: {
 		    target: {

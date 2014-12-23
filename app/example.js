@@ -2,17 +2,24 @@ require(['underscore'], function (underscore) {
     underscore = underscore;
 });
 
+var mySpy = {
+
+	myFunction : function(){
+		console.log('I got called');
+	}
+};
+
 //Example Module 
-var multiplier = function(){
+var multiplier = function(mySpy){
 
 	var self = {};
 
 
 	self.multiply_by = function(multiplier){
-		return _.map([1,2,3,4,5], function(foo){
-			return foo * multiplier;
-		});
+		mySpy.myFunction();
 	};
 
 	return self;
-}();
+}(mySpy);
+
+
